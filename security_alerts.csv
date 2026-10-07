@@ -1,0 +1,12 @@
+alert_type,severity,src_ip,detail,first_seen,last_seen
+BRUTE_FORCE,Medium,185.220.101.32,"Failed logins: 5 | Users: ubuntu | Ports: 60001, 60002, 60003, 60004, 60005 | Sources: linux_auth",2026-01-15 03:50:01,2026-01-15 03:50:09
+BRUTE_FORCE,Critical,203.0.113.45,"Failed logins: 11 | Users: Administrator, Guest, admin, root | Ports: 3389, 52341, 52342, 52343, 52344, 52345, 52346 | Sources: linux_auth, windows_security",2024-01-15 02:30:00,2026-01-15 02:14:13
+BRUTE_FORCE,Medium,77.88.55.242,"Failed logins: 4 | Users: backupadmin, svcaccount | Ports: 445 | Sources: windows_security",2024-01-15 04:15:00,2024-01-15 04:15:03
+BRUTE_FORCE,Medium,91.108.56.77,"Failed logins: 3 | Users: oracle | Ports: 11001, 11002, 11003 | Sources: linux_auth",2026-01-15 14:10:00,2026-01-15 14:10:02
+SUSPICIOUS_IP,High,185.220.101.32,Seen across 2 services | Total events: 10 | Users: ubuntu,,
+SUSPICIOUS_IP,High,203.0.113.45,"Seen across 2 services | Total events: 11 | Users: Administrator, Guest, admin, root",,
+PORT_SCAN,High,185.220.101.32,"Distinct ports hit: 5 | Ports: 25, 53, 143, 587, 993 | Total drops: 5",2026-01-15 10:05:00,2026-01-15 10:05:04
+PORT_SCAN,Critical,203.0.113.99,"Distinct ports hit: 8 | Ports: 22, 23, 80, 443, 3306, 5432, 6379, 8080 | Total drops: 8",2026-01-15 01:00:01,2026-01-15 01:00:08
+OFF_HOURS_LOGIN,Critical,198.51.100.7,User 'deploy' logged in at 02:15:00 via linux_auth:44201,2026-01-15 02:15:00,2026-01-15 02:15:00
+OFF_HOURS_LOGIN,Critical,10.0.0.5,User 'root' logged in at 03:47:18 via linux_auth:22100,2026-01-15 03:47:18,2026-01-15 03:47:18
+OFF_HOURS_LOGIN,Critical,10.0.1.8,User 'dave' logged in at 22:58:11 via linux_auth:38001,2026-01-15 22:58:11,2026-01-15 22:58:11
